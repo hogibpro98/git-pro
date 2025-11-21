@@ -1,5 +1,5 @@
 <?php
-define('DB_HOST', 'localhost.dev');
+define('DB_HOST', 'localhost.prod');
 define('DB_USER', 'root');
 define('DB_PASS', 'secret');
 define('APP_NAME', 'My Super App');
