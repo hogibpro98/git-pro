@@ -1,5 +1,5 @@
 <?php
-define('DB_HOST', 'localhost.staging');
+define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', 'secret');
 define('APP_NAME', 'My Super App');
