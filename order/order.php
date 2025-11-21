@@ -5,5 +5,5 @@ function formatCurrency($amount) {
 }
 
 function checkPermission($role) {
-    return $role === 'admin';
+    return $role === 'admin666';
 }
