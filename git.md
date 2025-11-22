@@ -15,6 +15,20 @@ git checkout [your-working-branch]
 git stash pop
 ```
 
+## git revert
+### When you want to undo a specific commit without changing the commit history, you can use git revert.
+```
+# Tìm ID của cái merge commit vừa rồi (ví dụ: abc1234)
+git log --oneline
+
+# Revert lại cái merge commit đó
+# -m 1: Là tham số bắt buộc khi revert một lệnh merge (chọn giữ lại nhánh cha chính)
+git revert -m 1 abc1234
+
+# Đẩy lên server an toàn (không cần -f)
+git push origin staging
+```
+
 ## git cherry-pick
 ### When you want to apply a specific commit from another branch into your current branch, you can use git cherry-pick.
 ```
@@ -26,8 +40,6 @@ git add .
 git cherry-pick --continue
 🛑 Nếu bạn muốn bỏ cherry-pick (hủy)
 git cherry-pick --abort
-```
-
 git log --oneline --grep="no"
 ```
 
